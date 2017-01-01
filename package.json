@@ -1,0 +1,26 @@
+{
+  "name": "react-static-site",
+  "version": "1.0.0",
+  "description": "A static site generator built with React and Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha -- --compilers js:babel-core/register --require ./test/setup.js 'test/**/*.@(js|jsx)'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/matthewbdaly/react-static-site.git"
+  },
+  "keywords": [
+    "react",
+    "static",
+    "site",
+    "generator",
+    "blog"
+  ],
+  "author": "Matthew Daly <matthewbdaly@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewbdaly/react-static-site/issues"
+  },
+  "homepage": "https://github.com/matthewbdaly/react-static-site#readme"
+}

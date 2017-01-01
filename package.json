@@ -25,6 +25,12 @@
   "bugs": {
     "url": "https://github.com/matthewbdaly/react-static-site/issues"
   },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
   "homepage": "https://github.com/matthewbdaly/react-static-site#readme",
   "devDependencies": {
     "babel-cli": "^6.18.0",

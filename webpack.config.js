@@ -1,5 +1,6 @@
 var webpack = require('webpack');  
 var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
+var CompressionPlugin = require('compression-webpack-plugin');
 var content = {
   paths: [
     '/'
@@ -38,6 +39,13 @@ module.exports = {
     },
     plugins: [
       new StaticSiteGeneratorPlugin('main', content.paths, content),
+      new CompressionPlugin({
+        asset: "[path].gz[query]",
+        algorithm: "gzip",
+        test: /\.js$|\.html$/,
+        threshold: 10240,
+        minRatio: 0.8
+      }),
       new webpack.HotModuleReplacementPlugin(),
       new webpack.NoErrorsPlugin()
     ]
